@@ -1,0 +1,311 @@
+:root {
+    /* Paleta base oficial */
+    --foreground: #29433a;
+    --forest: #29433a;
+    --sage: #dfe9dc;
+    --viajeros-bg: #eee9df;
+    --text-secondary: #65756c;
+    --white: #fffefb;
+    --dark-hover: #416253;
+    --accent-peach: #efc5a6;
+
+    /* Tipografía */
+    --font-main: 'Geist', Arial, sans-serif;
+    --font-serif: Georgia, serif;
+}
+
+/* 10. Secciones para agencias y viajeros */
+.split-section {
+    width: 100%;
+    font-family: var(--font-main);
+    background-color: transparent;
+}
+
+.split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 620px;
+    width: 100%;
+}
+
+/* Área visual de imágenes e integración con background-size: cover */
+.split-media {
+    width: 100%;
+    min-height: 520px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* 14. Overlays e imágenes específicas */
+.media-agencias {
+    background-image: url('../images/hero-expedition.png');
+    filter: saturate(0.7);
+}
+
+.media-viajeros {
+    background-image: url('../images/hero-expedition.png');
+    filter: saturate(0.55) hue-rotate(8deg);
+}
+
+/* Overlay verde sutil interno para integración cromática */
+.split-media::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(41, 67, 58, 0.04) 0%, rgba(41, 67, 58, 0.18) 100%);
+    pointer-events: none;
+}
+
+/* Paneles de contenido */
+.split-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px clamp(40px, 6vw, 135px);
+}
+
+.bg-sage {
+    background-color: var(--sage);
+}
+
+.bg-travelers {
+    background-color: var(--viajeros-bg);
+}
+
+/* 3. Escala tipográfica implementada */
+.eyebrow {
+    font-size: 10px;
+    font-weight: 650;
+    line-height: 1.4;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--foreground);
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+.split-title {
+    font-size: clamp(39px, 5.3vw, 70px);
+    font-weight: 420;
+    line-height: 1.02;
+    letter-spacing: -0.06em;
+    color: var(--foreground);
+    margin: 0 0 20px 0;
+}
+
+.split-title em {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent-peach);
+    letter-spacing: normal;
+}
+
+.split-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    color: var(--text-secondary);
+    max-width: 420px;
+    margin: 0;
+}
+
+/* Lista de verificación / Puntos */
+.split-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 34px 0;
+    display: grid;
+    gap: 13px;
+}
+
+.split-checklist li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    color: var(--foreground);
+}
+
+/* Check circular exacto */
+.check-circle {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 1px solid rgba(41, 67, 58, 0.35);
+    flex-shrink: 0;
+    background-color: transparent;
+}
+
+/* 8. Botones y enlaces */
+.split-action {
+    display: flex;
+    align-items: center;
+}
+
+/* Variante botón oscuro */
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 18px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button-dark {
+    background-color: var(--forest);
+    color: var(--white);
+}
+
+.button-dark:hover {
+    background-color: var(--dark-hover);
+    transform: translateY(-2px);
+}
+
+/* Enlace de texto */
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid currentColor;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--foreground);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.text-link:hover {
+    transform: translateX(3px);
+}
+/* Altura mínima de la sección según style-guide (620px) */
+.split-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 620px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* Contenedor base de medios con fondo blanco */
+.split-media {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Enmarcado exacto del UI Design:
+   - Margen superior e inferior: 50px (diferencia 620px - 520px de la guía)
+   - Margen exterior: 64px
+   - Pegado al centro (0) contra el bloque de color */
+.media-agencias-wrapper {
+    padding: 50px 0 50px clamp(32px, 5vw, 64px);
+}
+
+.media-viajeros-wrapper {
+    padding: 50px clamp(32px, 5vw, 64px) 50px 0;
+}
+
+/* Dimensiones y tratamiento fotográfico de la imagen */
+.media-img {
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    max-height: 520px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Filtros y saturación de la sección 14 del Style Guide */
+.img-agencias {
+    filter: saturate(0.7);
+}
+
+.img-viajeros {
+    filter: saturate(0.55) hue-rotate(8deg);
+}
+
+/* ==========================================================================
+   RESPONSIVE (BREAKPOINT: 780px)
+   Jerarquía: Primero bloque de texto, después bloque de imagen
+   ========================================================================== */
+@media (max-width: 780px) {
+    .split-grid {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    /* 1. Forzar que el contenido de texto siempre vaya primero */
+    .section-agencias .split-content,
+    .section-viajeros .split-content {
+        order: 1;
+        padding: 60px 24px 40px 24px;
+    }
+
+    /* 2. Forzar que la imagen siempre vaya después del texto */
+    .section-agencias .media-agencias-wrapper,
+    .section-viajeros .media-viajeros-wrapper {
+        order: 2;
+        padding: 16px 20px 48px 20px;
+        height: auto;
+    }
+
+    .media-img {
+        min-height: 280px;
+        max-height: 320px;
+        border-radius: 12px;
+    }
+
+    /* Ajuste de escala tipográfica para móvil */
+    .split-title {
+        font-size: clamp(34px, 8vw, 42px);
+        margin-bottom: 16px;
+    }
+
+    .split-description {
+        font-size: 15px;
+    }
+
+    .split-checklist {
+        margin: 24px 0 28px 0;
+    }
+}
+
+/* Botón selector de idioma */
+.lang-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-family: var(--font-main);
+    font-size: 11px;
+    font-weight: 650;
+    letter-spacing: 0.05em;
+    color: var(--foreground);
+    background-color: transparent;
+    border: 1px solid rgba(41, 67, 58, 0.35);
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.lang-pill:hover {
+    background-color: var(--sage);
+    transform: translateY(-1px);
+}
