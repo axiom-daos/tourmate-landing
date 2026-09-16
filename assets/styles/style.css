@@ -101,17 +101,42 @@ body {
 }
 
 .nav-links a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
     font-family: 'Geist', Arial, sans-serif;
     font-size: 13px;
     font-weight: 400;
     text-decoration: none;
     color: rgba(255, 254, 251, .82);
-    transition: color .2s ease;
+    transition: color .2s ease, transform .2s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    width: 18px;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--accent-peach, #efc5a6);
+    opacity: 0;
+    transform: translateX(-50%) scaleX(.45);
+    transform-origin: center;
+    transition: opacity .2s ease, transform .2s ease;
 }
 
 .nav-links a:hover,
 .nav-links a:focus-visible {
     color: var(--white, #fffefb);
+    transform: translateY(-1px);
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1);
 }
 
 .navbar.navbar--solid .nav-links a {
@@ -122,6 +147,11 @@ body {
 .navbar.navbar--solid .nav-links a:hover,
 .navbar.navbar--solid .nav-links a:focus-visible {
     opacity: 1;
+    color: var(--foreground, #29433a);
+}
+
+.navbar.navbar--solid .nav-links a::after {
+    background: var(--clay, #b87859);
 }
 
 /* ============================================================
@@ -793,6 +823,23 @@ body {
         padding: 16px 4px;
         font-size: 15px;
         color: rgba(255, 254, 251, .85);
+    }
+
+    .nav-links a::after {
+        left: 4px;
+        bottom: 10px;
+        transform: scaleX(.45);
+        transform-origin: left;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+        transform: none;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a:focus-visible::after {
+        transform: scaleX(1);
     }
 
     .hamburger-button {
