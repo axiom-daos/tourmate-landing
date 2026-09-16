@@ -12,14 +12,14 @@
     "text": "News since your last visit →"
   },
   "hero": {
-    "badge": "Invisible safety, adventure without limits",
-    "title-line": "Let the adventure be the only risk",
-    "title-italic": "they ",
-    "title-bold": "take.",
-    "description": "Behind every trail, someone is watching over you: location, heartbeat, and every step, tracked in real time, even without signal.",
-    "cta-tourist": "I am a tourist",
-    "cta-agency": "I have an agency",
-    "cta-join": "Join"
+  "tag": "More trail. Less noise.",
+  "title-main": "Adventure tourism",
+  "title-em": "without disconnecting",
+  "title-end": "from safety.",
+  "description": "IoT monitoring, offline routes, and preventive control for agencies and travelers in low-connectivity areas.",
+  "cta-travelers": "Explore for Travelers",
+  "cta-agencies": "Solutions for Agencies",
+  "footer-badge": "Secure expeditions"
   },
   "vision": {
   "tag": "A MORE NATURAL WAY TO EXPERIENCE TOURISM",

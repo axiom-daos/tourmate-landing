@@ -12,14 +12,14 @@
     "text": "Novedades desde tu última visita →"
   },
   "hero": {
-    "badge": "Seguridad invisible, aventura sin límites",
-    "title-line": "Que la aventura sea el único riesgo",
-    "title-italic": "que ",
-    "title-bold": "corran.",
-    "description": "Detrás de cada sendero, alguien vela por ti: ubicación, latido y cada paso, en tiempo real, incluso sin señal.",
-    "cta-tourist": "Soy turista",
-    "cta-agency": "Tengo una agencia",
-    "cta-join": "Unirse"
+  "tag": "Más sendero. Menos ruido.",
+  "title-main": "Turismo de aventura",
+  "title-em": "sin desconectarte",
+  "title-end": "de la seguridad.",
+  "description": "Monitoreo IoT, rutas offline y control preventivo para agencias y viajeros en zonas de baja conectividad.",
+  "cta-travelers": "Explora para Viajeros",
+  "cta-agencies": "Soluciones para Agencias",
+  "footer-badge": "Expediciones seguras"
   },
   "vision": {
   "tag": "UNA FORMA MÁS NATURAL DE HACER TURISMO",
