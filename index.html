@@ -200,7 +200,6 @@
 
         <!--Sección Agencias y Viajeros-->
 
-        <!-- BOTÓN SELECTOR DE IDIOMA (Colócalo en tu nav o cabecera) -->
 
         <!-- SECCIÓN #agencias: For Agencies and Guides -->
         <section class="split-section section-agencias" id="agencias">
@@ -217,7 +216,7 @@
 
                 <article class="split-content bg-sage">
                     <span class="eyebrow" data-i18n="agencias.tag">FOR AGENCIES AND GUIDES</span>
-                    <h2 class="split-title" data-i18n="agencias.title">
+                    <h2 class="split-title" data-i18n="agencias.title_html">
                         Your experience,<br>
                         <em>well guided.</em>
                     </h2>
@@ -252,7 +251,7 @@
             <div class="split-grid">
                 <article class="split-content bg-travelers">
                     <span class="eyebrow" data-i18n="viajeros.tag">FOR TRAVELERS</span>
-                    <h2 class="split-title" data-i18n="viajeros.title">
+                    <h2 class="split-title" data-i18n="viajeros.title_html">
                         Choose your next<br>
                         <em>story.</em>
                     </h2>
@@ -304,108 +303,89 @@
 
         <section id="team-development">
 
-            <div class="container team-wrap">
+    <div class="container team-wrap">
 
-                <!-- Introducción -->
-                <div class="team-intro">
+        <!-- Introducción -->
+        <div class="team-intro">
 
-                    <p class="eyebrow">TEAM DEVELOPMENT</p>
+            <p class="eyebrow" data-i18n="team-dev.tag">TEAM DEVELOPMENT</p>
 
-                    <h2>
-                        Construimos el viaje<br>
-                        <em>en equipo.</em>
-                    </h2>
+            <h2 data-i18n="team-dev.title_html">
+                Construimos el viaje<br>
+                <em>en equipo.</em>
+            </h2>
 
-                    <p>
-                        Las mejores experiencias nacen cuando agencias, guías y personas
-                        trabajan con una misma visión: hacer que cada recorrido sea más
-                        cercano, claro y memorable.
-                    </p>
+            <p data-i18n="team-dev.description">
+                Las mejores experiencias nacen cuando agencias, guías y personas
+                trabajan con una misma visión: hacer que cada recorrido sea más
+                cercano, claro y memorable.
+            </p>
 
+        </div>
+
+        <!-- Integrantes del equipo -->
+        <div class="team-members">
+
+            <article class="member-card">
+                <div class="member-photo">
+                    <img src="./assets/images/carrillo.png" alt="Foto de Matias Carrillo" data-i18n-attr="alt:team-dev.member-carrillo-alt">
                 </div>
-
-                <!-- Integrantes del equipo -->
-                <div class="team-members">
-
-                    <article class="member-card">
-
-                        <div class="member-photo">
-                            <img src="./assets/images/carrillo.png" alt="Foto de Matias Carrillo">
-                        </div>
-
-                        <div class="member-info">
-                            <h3>Matias Carrillo</h3>
-                            <p>Dirección de producto</p>
-                            <span>Define la visión del proyecto y coordina las prioridades del producto.</span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="member-card">
-
-                        <div class="member-photo">
-                            <img src="./assets/images/huingo.png" alt="Foto de Frank Huingo">
-                        </div>
-
-                        <div class="member-info">
-                            <h3>Frank Huingo</h3>
-                            <p>Estrategia y operaciones</p>
-                            <span>Organiza procesos y orienta las decisiones para el funcionamiento del proyecto.</span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="member-card">
-
-                        <div class="member-photo">
-                            <img src="./assets/images/quispe.png" alt="Foto de Tony Quispe">
-                        </div>
-
-                        <div class="member-info">
-                            <h3>Tony Quispe</h3>
-                            <p>Desarrollo de software</p>
-                            <span>Implementa la plataforma y desarrolla las funcionalidades principales.</span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="member-card">
-
-                        <div class="member-photo">
-                            <img src="./assets/images/verastigue.png" alt="Foto de Giancarlo Verastigue">
-                        </div>
-
-                        <div class="member-info">
-                            <h3>Giancarlo Verastigue</h3>
-                            <p>Diseño y experiencia</p>
-                            <span>Diseña la interfaz y busca una experiencia clara para los usuarios.</span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="member-card">
-
-                        <div class="member-photo">
-                            <img src="./assets/images/molina.jpg" alt="Foto de Manuel Molina">
-                        </div>
-
-                        <div class="member-info">
-                            <h3>Manuel Molina</h3>
-                            <p>Comunidad y alianzas</p>
-                            <span>Gestiona la relación con usuarios, agencias y posibles aliados.</span>
-                        </div>
-
-                    </article>
-
+                <div class="member-info">
+                    <h3>Matias Carrillo</h3>
+                    <p data-i18n="team-dev.member-carrillo-role">Dirección de producto</p>
+                    <span data-i18n="team-dev.member-carrillo-desc">Define la visión del proyecto y coordina las prioridades del producto.</span>
                 </div>
+            </article>
 
-            </div>
+            <article class="member-card">
+                <div class="member-photo">
+                    <img src="./assets/images/huingo.png" alt="Foto de Frank Huingo" data-i18n-attr="alt:team-dev.member-huingo-alt">
+                </div>
+                <div class="member-info">
+                    <h3>Frank Huingo</h3>
+                    <p data-i18n="team-dev.member-huingo-role">Estrategia y operaciones</p>
+                    <span data-i18n="team-dev.member-huingo-desc">Organiza procesos y orienta las decisiones para el funcionamiento del proyecto.</span>
+                </div>
+            </article>
 
-        </section>
+            <article class="member-card">
+                <div class="member-photo">
+                    <img src="./assets/images/quispe.png" alt="Foto de Tony Quispe" data-i18n-attr="alt:team-dev.member-quispe-alt">
+                </div>
+                <div class="member-info">
+                    <h3>Tony Quispe</h3>
+                    <p data-i18n="team-dev.member-quispe-role">Desarrollo de software</p>
+                    <span data-i18n="team-dev.member-quispe-desc">Implementa la plataforma y desarrolla las funcionalidades principales.</span>
+                </div>
+            </article>
+
+            <article class="member-card">
+                <div class="member-photo">
+                    <img src="./assets/images/verastigue.png" alt="Foto de Giancarlo Verastigue" data-i18n-attr="alt:team-dev.member-verastigue-alt">
+                </div>
+                <div class="member-info">
+                    <h3>Giancarlo Verastigue</h3>
+                    <p data-i18n="team-dev.member-verastigue-role">Diseño y experiencia</p>
+                    <span data-i18n="team-dev.member-verastigue-desc">Diseña la interfaz y busca una experiencia clara para los usuarios.</span>
+                </div>
+            </article>
+
+            <article class="member-card">
+                <div class="member-photo">
+                    <img src="./assets/images/molina.jpg" alt="Foto de Manuel Molina" data-i18n-attr="alt:team-dev.member-molina-alt">
+                </div>
+                <div class="member-info">
+                    <h3>Manuel Molina</h3>
+                    <p data-i18n="team-dev.member-molina-role">Comunidad y alianzas</p>
+                    <span data-i18n="team-dev.member-molina-desc">Gestiona la relación con usuarios, agencias y posibles aliados.</span>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
 
         <!-- Sección Team Development -->
 

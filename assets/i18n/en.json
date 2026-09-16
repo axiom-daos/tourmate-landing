@@ -8,6 +8,26 @@
     "novedades": "News",
     "join": "Join"
   },
+  "team-dev": {
+  "tag": "TEAM DEVELOPMENT",
+  "title_html": "We build the journey<br><em>as a team.</em>",
+  "description": "The best experiences are born when agencies, guides, and people work with a shared vision: making every trip closer, clearer, and more memorable.",
+  "member-carrillo-role": "Product Direction",
+  "member-carrillo-desc": "Defines the project's vision and coordinates product priorities.",
+  "member-carrillo-alt": "Photo of Matias Carrillo",
+  "member-huingo-role": "Strategy & Operations",
+  "member-huingo-desc": "Organizes processes and guides decisions for the project's operation.",
+  "member-huingo-alt": "Photo of Frank Huingo",
+  "member-quispe-role": "Software Development",
+  "member-quispe-desc": "Implements the platform and develops the core features.",
+  "member-quispe-alt": "Photo of Tony Quispe",
+  "member-verastigue-role": "Design & Experience",
+  "member-verastigue-desc": "Designs the interface and pursues a clear experience for users.",
+  "member-verastigue-alt": "Photo of Giancarlo Verastigue",
+  "member-molina-role": "Community & Partnerships",
+  "member-molina-desc": "Manages relationships with users, agencies, and potential partners.",
+  "member-molina-alt": "Photo of Manuel Molina"
+},
   "banner": {
     "text": "News since your last visit →"
   },
@@ -93,19 +113,26 @@
     "feat-memory-title": "Memory Maps",
     "feat-memory-desc": "Geotagged photos and videos shared with other travelers at the same route points."
   },
-  "agencies": {
-    "tag": "For the Tours Agencies",
-    "title": "Manage all your tours from one place.",
-    "description": "TourMate gives your agency a real-time command center. Monitor groups, receive alerts for anomalies, and respond before a problem becomes an emergency.",
-    "feat-dashboard-title": "Live Dashboard",
-    "feat-dashboard-desc": "View all your groups on a unified map with progress and health status.",
-    "feat-alerts-title": "Automatic Alerts",
-    "feat-alerts-desc": "Your guide is notified the moment something looks wrong, before it becomes an emergency.",
-    "feat-reports-title": "Post-tour Reports",
-    "feat-reports-desc": "Complete metrics for each tour to optimize routes and experiences.",
-    "feat-sync-title": "Asynchronous Sync",
-    "feat-sync-desc": "Operates without continuous internet. Data is synchronized when a signal is available."
-  },
+  "agencias": {
+  "tag": "FOR AGENCIES AND GUIDES",
+  "title_html": "Your experience,<br><em>well guided.</em>",
+  "description": "Share what you do best and build a closer connection with those who trust your expeditions.",
+  "check1": "Showcase your routes clearly",
+  "check2": "Better support every expedition group",
+  "check3": "Build trust from the very first contact",
+  "cta": "Let's talk",
+  "image_alt": "Expedition group and mountain guides walking on a ridge at sunrise"
+},
+"viajeros": {
+  "tag": "FOR TRAVELERS",
+  "title_html": "Choose your next<br><em>story.</em>",
+  "description": "There is a trail waiting for you. Find an experience that truly connects with the way you explore the world.",
+  "check1": "Find an experience that fits your pace",
+  "check2": "Get ready to enjoy every step of the trail",
+  "check3": "Travel with greater calm and confidence",
+  "cta": "I want to explore",
+  "image_alt": "Trekkers exploring rugged mountain trails with scenic views of snow-capped peaks"
+},
   "ecosystem": {
     "tag": "Technology",
     "title": "TourMate IoT Ecosystem",
@@ -181,6 +208,7 @@
       "feat-export-journal": "Export journal in PDF or share link",
       "cta": "Try 7 days free"
     },
+    
     "expedition": {
       "tier": "Expedition",
       "title": "For frequent adventurers",

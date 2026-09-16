@@ -93,19 +93,26 @@
     "feat-memory-title": "Mapas de Memoria",
     "feat-memory-desc": "Fotos y videos geoetiquetados compartidos con otros viajeros en los mismos puntos de ruta."
   },
-  "agencies": {
-    "tag": "Para Agencias de Tours",
-    "title": "Gestiona todos tus tours desde un solo lugar.",
-    "description": "TourMate le da a tu agencia un centro de comando en tiempo real. Monitorea grupos, recibe alertas por anomalías y responde antes de que un problema se convierta en emergencia.",
-    "feat-dashboard-title": "Dashboard en Vivo",
-    "feat-dashboard-desc": "Visualiza todos tus grupos en un mapa unificado con progreso y estado de salud.",
-    "feat-alerts-title": "Alertas Automáticas",
-    "feat-alerts-desc": "Tu guía recibe la alerta en el momento en que algo se ve mal, antes de que se convierta en una emergencia.",
-    "feat-reports-title": "Reportes Post-tour",
-    "feat-reports-desc": "Métricas completas de cada tour para optimizar rutas y experiencias.",
-    "feat-sync-title": "Sincronización Asíncrona",
-    "feat-sync-desc": "Opera sin internet continuo. Los datos se sincronizan cuando hay señal disponible."
-  },
+  "agencias": {
+  "tag": "PARA AGENCIAS Y GUÍAS",
+  "title_html": "Tu experiencia,<br><em>bien guiada.</em>",
+  "description": "Comparte lo que mejor haces y construye una conexión más cercana con quienes confían en tus expediciones.",
+  "check1": "Muestra tus rutas con claridad",
+  "check2": "Acompaña mejor a cada grupo de expedición",
+  "check3": "Genera confianza desde el primer contacto",
+  "cta": "Conversemos",
+  "image_alt": "Grupo de expedición y guías de montaña caminando por una cresta al amanecer"
+},
+"viajeros": {
+  "tag": "PARA VIAJEROS",
+  "title_html": "Elige tu próxima<br><em>historia.</em>",
+  "description": "Hay un sendero esperándote. Encuentra una experiencia que realmente conecte con tu forma de explorar el mundo.",
+  "check1": "Encuentra una experiencia a tu ritmo",
+  "check2": "Prepárate para disfrutar cada paso del camino",
+  "check3": "Viaja con más calma y confianza",
+  "cta": "Quiero explorar",
+  "image_alt": "Trekkers explorando senderos de montaña con vistas de picos nevados"
+},
   "ecosystem": {
     "tag": "Tecnología",
     "title": "Ecosistema IoT de TourMate",
@@ -308,6 +315,26 @@
     "card-vision-desc": "Para 2028, ser la plataforma líder en América Latina para gestión de tours de aventura, expandiendo nuestra red IoT a las principales rutas de trekking del continente.",
     "team-title": "Equipo fundador"
   },
+  "team-dev": {
+  "tag": "DESARROLLO DE EQUIPO",
+  "title_html": "Construimos el viaje<br><em>en equipo.</em>",
+  "description": "Las mejores experiencias nacen cuando agencias, guías y personas trabajan con una misma visión: hacer que cada recorrido sea más cercano, claro y memorable.",
+  "member-carrillo-role": "Dirección de producto",
+  "member-carrillo-desc": "Define la visión del proyecto y coordina las prioridades del producto.",
+  "member-carrillo-alt": "Foto de Matias Carrillo",
+  "member-huingo-role": "Estrategia y operaciones",
+  "member-huingo-desc": "Organiza procesos y orienta las decisiones para el funcionamiento del proyecto.",
+  "member-huingo-alt": "Foto de Frank Huingo",
+  "member-quispe-role": "Desarrollo de software",
+  "member-quispe-desc": "Implementa la plataforma y desarrolla las funcionalidades principales.",
+  "member-quispe-alt": "Foto de Tony Quispe",
+  "member-verastigue-role": "Diseño y experiencia",
+  "member-verastigue-desc": "Diseña la interfaz y busca una experiencia clara para los usuarios.",
+  "member-verastigue-alt": "Foto de Giancarlo Verastigue",
+  "member-molina-role": "Comunidad y alianzas",
+  "member-molina-desc": "Gestiona la relación con usuarios, agencias y posibles aliados.",
+  "member-molina-alt": "Foto de Manuel Molina"
+},
   "team": {
     "member-miler-name": "Miler Rodriguez",
     "member-miler-role": "Ingeniero frontend enfocado en interfaces que se mantienen simples bajo presión, porque en el sendero, simple puede salvar una vida.",
