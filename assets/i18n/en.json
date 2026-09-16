@@ -1,0 +1,23 @@
+{
+  "agencias": {
+    "tag": "FOR AGENCIES AND GUIDES",
+    "title": "Your experience,<br><em>well guided.</em>",
+    "description": "Share what you do best and build a closer connection with those who trust your expeditions.",
+    "check1": "Showcase your routes clearly",
+    "check2": "Better support every expedition group",
+    "check3": "Build trust from the very first contact",
+    "cta": "Let's talk &rarr;",
+    "image_alt": "Expedition group and mountain guides walking on a ridge at sunrise"
+  },
+  "viajeros": {
+    "tag": "FOR TRAVELERS",
+    "title": "Choose your next<br><em>story.</em>",
+    "description": "There is a trail waiting for you. Find an experience that truly connects with the way you explore the world.",
+    "check1": "Find an experience that fits your pace",
+    "check2": "Get ready to enjoy every step of the trail",
+    "check3": "Travel with greater calm and confidence",
+    "cta": "I want to explore &rarr;",
+    "image_alt": "Trekkers exploring rugged mountain trails with scenic views of snow-capped peaks"
+  },
+  "lang_toggle": "ES"
+}
