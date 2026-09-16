@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "nav": {
     "tourists": "Turistas",
     "agencies": "Agencias",
@@ -438,4 +439,27 @@
   "legal": {
     "goBack": "Regresar"
   }
+=======
+  "agencias": {
+    "tag": "PARA AGENCIAS Y GUÍAS",
+    "title": "Tu experiencia,<br><em>bien acompañada.</em>",
+    "description": "Comparte lo que haces mejor y crea una relación más cercana con quienes confían en tus recorridos.",
+    "check1": "Presenta tus recorridos con claridad",
+    "check2": "Acompaña mejor a cada grupo",
+    "check3": "Construye confianza desde el primer contacto",
+    "cta": "Hablemos &rarr;",
+    "image_alt": "Grupo de expedición y guías caminando sobre la cresta de una montaña al amanecer"
+  },
+  "viajeros": {
+    "tag": "PARA VIAJEROS",
+    "title": "Elige tu próxima<br><em>historia.</em>",
+    "description": "Hay un camino esperando por ti. Encuentra una experiencia que conecte con tu forma de descubrir el mundo.",
+    "check1": "Encuentra una experiencia que vaya contigo",
+    "check2": "Prepárate para disfrutar cada tramo",
+    "check3": "Viaja con más calma y confianza",
+    "cta": "Quiero explorar &rarr;",
+    "image_alt": "Trekkers recorriendo senderos escarpados con vistas panorámicas a picos nevados"
+  },
+  "lang_toggle": "EN"
+>>>>>>> feature/agencias-viajeros-section
 }
