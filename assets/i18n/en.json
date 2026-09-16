@@ -21,6 +21,19 @@
     "cta-agency": "I have an agency",
     "cta-join": "Join"
   },
+  "vision": {
+  "tag": "A MORE NATURAL WAY TO EXPERIENCE TOURISM",
+  "title-pre": "Everything starts with a good",
+  "title-accent": "connection.",
+  "description": "Behind every tour there are people, places, and moments worth enjoying. TourMate was created to bring them closer with simplicity: a friendly experience for agencies, guides, and travelers.",
+  "cta": "Discover the proposal",
+  "clarity-title": "More clarity",
+  "clarity-desc": "The right amount of information to understand and enjoy each experience.",
+  "trust-title": "More trust",
+  "trust-desc": "Close support before, during, and after the trip.",
+  "memories-title": "More memories",
+  "memories-desc": "Because what matters isn't just arriving, but everything that stays with you."
+  },
   "app-preview": {
     "tag": "See it in action",
     "title-pre": "The platform, ",
