@@ -187,10 +187,6 @@
 
         <!--Sección Visión-->
 
-
-
-
-
         <!--Sección Agencias y Viajeros-->
 
 
@@ -287,6 +283,352 @@
         <script src="assets/i18n/i18n.js"></script>
 
         <!--Sección Agencias y Viajeros-->
+
+        <!--
+    plans — pricing for tourists and agencies
+-->
+        <section class="plans" id="plans" aria-labelledby="plans-heading">
+
+            <span class="section-tag" data-i18n="plans.tag">Plans</span>
+            <h2 id="plans-heading" data-i18n="plans.title">Plans for every adventure</h2>
+            <p class="plans-subtitle" data-i18n="plans.subtitle">
+                Transparent, no surprises. The IoT is always provided by the agency, the tourist only needs the app.
+            </p>
+
+            <!-- tab toggle: tourists vs agencies -->
+            <div class="plans-toggle" role="tablist" aria-label="Plan type selector">
+                <button
+                        class="toggle-btn active"
+                        id="btn-tourists"
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="tourist-plans"
+                        onclick="switchPlans('tourists')"
+                        data-i18n="plans.toggle-tourists"
+                >Tourists</button>
+                <button
+                        class="toggle-btn"
+                        id="btn-agencies"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="agency-plans"
+                        onclick="switchPlans('agencies')"
+                        data-i18n="plans.toggle-agencies"
+                >Agencies</button>
+            </div>
+
+            <!-- tourist plans -->
+            <div class="plans-grid active" id="tourist-plans" role="tabpanel" aria-labelledby="btn-tourists">
+
+                <!-- explorer plan — free -->
+                <div class="plan-card">
+                    <p class="plan-tier" data-i18n="plans.explorer.tier">Explorer</p>
+                    <h3 class="plan-title" data-i18n="plans.explorer.title">Free app for everyone</h3>
+                    <p class="plan-desc" data-i18n="plans.explorer.description">
+                        Everything essential to participate in an agency-managed tour. No cost, no card.
+                    </p>
+                    <div class="plan-price">
+                        <div class="plan-price-main free" data-i18n="plans.explorer.price">Free</div>
+                        <p class="plan-price-note" data-i18n="plans.explorer.note"></p>
+                    </div>
+                    <ul class="plan-features" aria-label="Explorer plan features">
+                        <li>
+            <span class="group-lbl" data-i18n="plans.explorer.group-navigation">
+                <!-- navigation icon -->
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M8 2l1.5 4.5H14l-3.75 2.75 1.5 4.5L8 11l-3.75 2.75 1.5-4.5L2 6.5h4.5z"/>
+                </svg>
+                On-route navigation
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.explorer.feat-offline-map">Downloadable offline route map (no signal)</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.explorer.feat-checkpoints">Checkpoints marked on the map</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.explorer.feat-danger-zones">Danger zones visible on route</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.explorer.feat-gps">Your GPS position in real time</span></li>
+                        <li>
+            <span class="group-lbl" data-i18n="plans.explorer.group-health">
+                <!-- watch icon -->
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="4" y="3" width="8" height="10" rx="2"/>
+                <path d="M6 1v2M10 1v2M6 13v2M10 13v2M8 6v3l2 1"/>
+                </svg>
+                Health via agency watch
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.explorer.feat-heart-rate">View your current heart rate</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.explorer.feat-oxygen">View your oxygen saturation (SpO₂)</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.explorer.feat-auto-alerts">Automatic alerts to agency if anomaly</span></li>
+                        <li>
+            <span class="group-lbl" data-i18n="plans.explorer.group-record">
+                <!-- camera icon -->
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M2 5a1 1 0 011-1h1.5l1-2h5l1 2H13a1 1 0 011 1v7a1 1 0 01-1 1H3a1 1 0 01-1-1V5z"/>
+                <circle cx="8" cy="8.5" r="2"/>
+                </svg>
+                Trip record
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.explorer.feat-photos">Upload photos during route up to 20 photos</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.explorer.feat-geo-photos">View geo-contextual photos of other travelers</span></li>
+                    </ul>
+                    <button class="btn-plan" data-i18n="plans.explorer.cta" aria-label="Download Explorer plan">Download here</button>
+                </div>
+
+                <!-- trekker plan — featured -->
+                <div class="plan-card featured">
+                    <p class="plan-tier" data-i18n="plans.trekker.tier">Trekker</p>
+                    <h3 class="plan-title" data-i18n="plans.trekker.title">The complete experience</h3>
+                    <p class="plan-desc" data-i18n="plans.trekker.description">
+                        For the adventurer who wants to record and relive every moment of their expedition.
+                    </p>
+                    <div class="plan-price">
+                        <div class="plan-price-main" data-i18n="plans.trekker.price">S/19</div>
+                        <p class="plan-price-note" data-i18n="plans.trekker.note">Monthly | 7-day free trial, no commitment</p>
+                    </div>
+                    <ul class="plan-features" aria-label="Trekker plan features">
+                        <li>
+            <span class="group-lbl" data-i18n="plans.trekker.group-navigation">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M8 2l1.5 4.5H14l-3.75 2.75 1.5 4.5L8 11l-3.75 2.75 1.5-4.5L2 6.5h4.5z"/>
+                </svg>
+                On-route navigation
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-includes-explorer">Everything in Explorer plan</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-unlimited-routes">Unlimited downloadable routes</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-history">Completed routes history</span></li>
+                        <li>
+            <span class="group-lbl" data-i18n="plans.trekker.group-health">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="4" y="3" width="8" height="10" rx="2"/>
+                <path d="M6 1v2M10 1v2M6 13v2M10 13v2M8 6v3l2 1"/>
+                </svg>
+                Health via agency watch
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-realtime-vitals">Heart rate and SpO₂ in real time</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-vitals-graph">Historical vital signs graph for the tour</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-emergency-alerts">Automatic alerts to agency and emergency contact</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-emergency-contacts">Up to 3 emergency contacts</span></li>
+                        <li>
+            <span class="group-lbl" data-i18n="plans.trekker.group-record">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M2 5a1 1 0 011-1h1.5l1-2h5l1 2H13a1 1 0 011 1v7a1 1 0 01-1 1H3a1 1 0 01-1-1V5z"/>
+                <circle cx="8" cy="8.5" r="2"/>
+                </svg>
+                Trip record
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-unlimited-photos">Unlimited photos with auto geo-tag</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-videos">Videos during the route up to 10 clips</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-journal">Auto-generated travel journal at end of tour</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.trekker.feat-export-journal">Export journal in PDF or share link</span></li>
+                    </ul>
+                    <button class="btn-plan orange-btn" data-i18n="plans.trekker.cta" aria-label="Try Trekker plan free for 7 days">Try 7 days free</button>
+                </div>
+
+                <!-- expedition plan -->
+                <div class="plan-card">
+                    <p class="plan-tier" data-i18n="plans.expedition.tier">Expedition</p>
+                    <h3 class="plan-title" data-i18n="plans.expedition.title">For frequent adventurers</h3>
+                    <p class="plan-desc" data-i18n="plans.expedition.description">
+                        Multiple tours per year, unlimited journals and the best multimedia experience of each adventure.
+                    </p>
+                    <div class="plan-price">
+                        <div class="plan-price-main" data-i18n="plans.expedition.price">S/39</div>
+                        <p class="plan-price-note" data-i18n="plans.expedition.note">Monthly | Everything in Trekker, no limits</p>
+                    </div>
+                    <ul class="plan-features" aria-label="Expedition plan features">
+                        <li>
+            <span class="group-lbl" data-i18n="plans.expedition.group-navigation">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M8 2l1.5 4.5H14l-3.75 2.75 1.5 4.5L8 11l-3.75 2.75 1.5-4.5L2 6.5h4.5z"/>
+                </svg>
+                On-route navigation
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.expedition.feat-includes-trekker">Everything in Trekker plan</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.expedition.feat-public-profile">Public adventurer profile with your routes</span></li>
+                        <li>
+            <span class="group-lbl" data-i18n="plans.expedition.group-health">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="4" y="3" width="8" height="10" rx="2"/>
+                <path d="M6 1v2M10 1v2M6 13v2M10 13v2M8 6v3l2 1"/>
+                </svg>
+                Health via agency watch
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.expedition.feat-health-history">Accumulated health history across all tours</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.expedition.feat-unlimited-contacts">Unlimited emergency contacts</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.expedition.feat-medical-summary">Exportable post-tour medical summary (PDF)</span></li>
+                        <li>
+            <span class="group-lbl" data-i18n="plans.expedition.group-record">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M2 5a1 1 0 011-1h1.5l1-2h5l1 2H13a1 1 0 011 1v7a1 1 0 01-1 1H3a1 1 0 01-1-1V5z"/>
+                <circle cx="8" cy="8.5" r="2"/>
+                </svg>
+                Trip record
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.expedition.feat-unlimited-media">Unlimited photos and videos</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.expedition.feat-unlimited-journals">Auto-generated journals, no tour limit</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.expedition.feat-album">Personal album across all tours</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.expedition.feat-community">Contribute geo-contextual content to community</span></li>
+                    </ul>
+                    <button class="btn-plan" data-i18n="plans.expedition.cta" aria-label="Choose Expedition plan">Choose Expedition</button>
+                </div>
+
+            </div>
+
+            <!-- agency plans -->
+            <div class="plans-grid" id="agency-plans" role="tabpanel" aria-labelledby="btn-agencies">
+                <!-- base plan -->
+                <div class="plan-card">
+                    <p class="plan-tier" data-i18n="plans.agency-base.tier">Base</p>
+                    <h3 class="plan-title" data-i18n="plans.agency-base.title">For agencies getting started</h3>
+                    <p class="plan-desc" data-i18n="plans.agency-base.description">
+                        Digitize your first tour operation with GPS monitoring and small group management.
+                    </p>
+                    <div class="plan-price">
+                        <div class="plan-price-main" data-i18n="plans.agency-base.price">S/299</div>
+                        <p class="plan-price-note" data-i18n="plans.agency-base.note">Monthly | Includes initial setup onboarding</p>
+                    </div>
+                    <ul class="plan-features" aria-label="Base agency plan features">
+                        <li>
+            <span class="group-lbl" data-i18n="plans.agency-base.group-hardware">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="4" y="3" width="8" height="10" rx="2"/>
+                <path d="M6 1v2M10 1v2M6 13v2M10 13v2M8 6v3l2 1"/>
+                </svg>
+                IoT Hardware included
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-base.feat-watches">Up to 5 smart watches managed</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-base.feat-vitals-capture">Heart rate and SpO₂ capture on route</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-base.feat-gps-watch">GPS geolocation by watch in real time</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-base.feat-auto-sync">Auto sync when signal available</span></li>
+                        <li>
+            <span class="group-lbl" data-i18n="plans.agency-base.group-panel">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="1" y="2" width="14" height="10" rx="1"/>
+                <path d="M5 14h6M8 12v2"/>
+                </svg>
+                Web management panel
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-base.feat-live-location">Real-time location of each active group</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-base.feat-health-status">Health status by trekker (HR &amp; SpO₂)</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-base.feat-active-tours">Up to 2 simultaneous active tours</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-base.feat-guides">Up to 3 registered guides</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-base.feat-routes">Package and route management up to 5</span></li>
+                    </ul>
+                    <button class="btn-plan" data-i18n="plans.agency-base.cta" aria-label="Get started with Base agency plan">Get Started</button>
+                </div>
+
+                <!-- pro plan — featured -->
+                <div class="plan-card featured">
+                    <p class="plan-tier" data-i18n="plans.agency-pro.tier">Pro</p>
+                    <h3 class="plan-title" data-i18n="plans.agency-pro.title">Complete IoT operation</h3>
+                    <p class="plan-desc" data-i18n="plans.agency-pro.description">
+                        For agencies operating multiple simultaneous tours with full field control,
+                        including Bluetooth checkpoints on route.
+                    </p>
+                    <div class="plan-price">
+                        <div class="plan-price-main" data-i18n="plans.agency-pro.price">S/599</div>
+                        <p class="plan-price-note" data-i18n="plans.agency-pro.note">Monthly | Includes Bluetooth checkpoint installation</p>
+                    </div>
+                    <ul class="plan-features" aria-label="Pro agency plan features">
+                        <li>
+            <span class="group-lbl" data-i18n="plans.agency-pro.group-hardware">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="4" y="3" width="8" height="10" rx="2"/>
+                <path d="M6 1v2M10 1v2M6 13v2M10 13v2M8 6v3l2 1"/>
+                </svg>
+                IoT Hardware included
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-watches">Up to 20 smart watches managed</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-vitals-capture">Heart rate and SpO₂ capture on route</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-gps">GPS geolocation in real time</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-async-sync">Asynchronous sync (works without signal)</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-bluetooth">Bluetooth checkpoints on route up to 10 posts</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-checkpoint-record">Automatic checkpoint passage record</span></li>
+                        <li>
+            <span class="group-lbl" data-i18n="plans.agency-pro.group-panel">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="1" y="2" width="14" height="10" rx="1"/>
+                <path d="M5 14h6M8 12v2"/>
+                </svg>
+                Web management panel
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-live-map">Live map with all active groups</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-health-realtime">Real-time health status per trekker</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-unlimited-tours">Unlimited simultaneous active tours</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-unlimited-guides">Unlimited registered guides</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-management">Centralized guides, packages and IoT equipment management</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-pro.feat-mobile-access">Panel accessible from web and mobile app</span></li>
+                    </ul>
+                    <button class="btn-plan orange-btn" data-i18n="plans.agency-pro.cta" aria-label="Try Pro agency plan free for 7 days">Try 7 days free</button>
+                </div>
+
+                <!-- enterprise plan -->
+                <div class="plan-card">
+                    <p class="plan-tier" data-i18n="plans.agency-enterprise.tier">Enterprise</p>
+                    <h3 class="plan-title" data-i18n="plans.agency-enterprise.title">For large operators</h3>
+                    <p class="plan-desc" data-i18n="plans.agency-enterprise.description">
+                        Dedicated infrastructure, personalized hardware and 24/7 support for large-scale operations.
+                    </p>
+                    <div class="plan-price">
+                        <div class="plan-price-main free" data-i18n="plans.agency-enterprise.price">Custom</div>
+                        <p class="plan-price-note" data-i18n="plans.agency-enterprise.note">Talk to our team — Demo included</p>
+                    </div>
+                    <ul class="plan-features" aria-label="Enterprise agency plan features">
+                        <li>
+            <span class="group-lbl" data-i18n="plans.agency-enterprise.group-hardware">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="4" y="3" width="8" height="10" rx="2"/>
+                <path d="M6 1v2M10 1v2M6 13v2M10 13v2M8 6v3l2 1"/>
+                </svg>
+                IoT Hardware at scale
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-unlimited-watches">Unlimited smart watches</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-unlimited-checkpoints">Unlimited Bluetooth checkpoints</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-custom-hardware">Hardware customizable by tour type and route</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-maintenance">Preventive device maintenance included</span></li>
+                        <li>
+            <span class="group-lbl" data-i18n="plans.agency-enterprise.group-platform">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="1" y="2" width="14" height="10" rx="1"/>
+                <path d="M5 14h6M8 12v2"/>
+                </svg>
+                Dedicated platform
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-includes-pro">Everything in Pro plan included</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-private-server">Private server or dedicated cloud</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-sla">99.9% uptime guaranteed SLA</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-white-label">White-label (your brand on the platform)</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-api">REST API to integrate with your CRM or ERP</span></li>
+                        <li>
+            <span class="group-lbl" data-i18n="plans.agency-enterprise.group-support">
+                <svg class="group-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M8 2a6 6 0 100 12A6 6 0 008 2zM4 8a4 4 0 014-4M8 6v2l1.5 1.5"/>
+                </svg>
+                Dedicated 24/7 support
+            </span>
+                        </li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-onboarding">Onboarding and on-site training</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-support-line">24/7 support with dedicated direct line</span></li>
+                        <li><span class="tick" aria-hidden="true">✓</span><span data-i18n="plans.agency-enterprise.feat-success-manager">Assigned customer success manager</span></li>
+                    </ul>
+                    <a href="#contact-humano" class="btn-plan" data-i18n="plans.agency-enterprise.cta" aria-label="Contact us for Enterprise plan">Contact us</a>
+                </div>
+
+            </div>
+
+        </section>
 
 
         <!-- Sección Team Development -->
