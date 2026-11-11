@@ -472,5 +472,22 @@
   },
   "legal": {
     "goBack": "Regresar"
+  },
+
+  "video-product": {
+    "tag": "DESCUBRE TOURMATE",
+    "title": "Acerca del producto",
+    "description": "Descubre cómo TourMate conecta aventura, tecnología y seguridad para crear mejores experiencias para turistas y agencias de viaje.",
+    "video-title": "Conoce la experiencia TourMate",
+    "coming-soon": "Próximamente: video de presentación del producto",
+    "footer": "Aventúrate con inteligencia. Explora con seguridad."
+  },
+  "video-team": {
+    "tag": "LAS PERSONAS DETRÁS DE TOURMATE",
+    "title": "Conoce al equipo",
+    "description": "Conoce a las personas que combinan tecnología, aventura y compromiso para hacer más seguras las expediciones con TourMate.",
+    "video-title": "Conoce al equipo Axiom",
+    "coming-soon": "Próximamente: video de presentación del equipo"
   }
+
 }
