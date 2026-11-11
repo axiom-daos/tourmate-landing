@@ -417,40 +417,32 @@
                 </p>
             </div>
 
-            <!-- Video placeholder: later replace this inner panel with a <video> element.
-                 Suggested file: assets/videos/about-product.mp4 -->
+
+            <!-- Video de presentación de TourMate -->
             <div class="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-[#dce5dc] bg-white shadow-xl">
 
-                <div
-                        class="relative flex min-h-[260px] aspect-video items-center justify-center bg-cover bg-center"
-                        style="background-image: url('assets/images/hero-expedition.png');"
+                <video
+                        class="block w-full aspect-video object-contain bg-[#193c32]"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        poster="assets/images/hero-expedition.png"
+                        aria-label="Video de presentación del producto TourMate"
                 >
-                    <div class="absolute inset-0 bg-[#193c32]/75"></div>
-
-                    <div class="relative z-10 px-6 text-center text-white">
-
-                        <div class="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full border border-white/50 bg-white/20">
-                            <i class="fa-solid fa-play text-2xl" aria-hidden="true"></i>
-                        </div>
-
-                        <h3 class="mb-3 text-2xl font-semibold md:text-3xl" data-i18n="video-product.video-title">
-                            Explore the TourMate Experience
-                        </h3>
-
-                        <p class="text-sm text-white/80 md:text-base" data-i18n="video-product.coming-soon">
-                            Product presentation video coming soon
-                        </p>
-
-                    </div>
-                </div>
+                    <source
+                            src="assets/videos/about-the-product.mp4"
+                            type="video/mp4"
+                    >
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
 
                 <div class="px-6 py-5 text-center">
                     <p class="text-sm text-[#64746c]" data-i18n="video-product.footer">
                         Adventure smarter. Explore safer.
                     </p>
                 </div>
-            </div>
 
+            </div>
         </div>
     </section>
     <!-- End About the Product -->
