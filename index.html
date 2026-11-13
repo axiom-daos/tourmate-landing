@@ -447,18 +447,188 @@
     </section>
     <!-- End About the Product -->
 
-    <!-- News: section referenced by the existing navigation -->
-    <section id="novedades" class="bg-[#f5f5ef] px-6 py-20 md:py-24" aria-labelledby="news-heading" style="scroll-margin-top: 96px;">
-        <div class="mx-auto max-w-5xl text-center">
-            <span class="text-xs font-semibold uppercase tracking-[0.22em] text-[#b57950]" data-i18n="novedades.tag">News</span>
-            <h2 id="news-heading" class="mt-4 text-3xl font-semibold text-[#203d34] md:text-5xl" data-i18n="novedades.title">What's new at TourMate</h2>
-            <div class="mx-auto mt-9 max-w-3xl rounded-3xl border border-[#dce5dc] bg-white px-7 py-12 shadow-sm">
-                <i class="fa-regular fa-newspaper mb-5 text-3xl text-[#b57950]" aria-hidden="true"></i>
-                <p class="text-base leading-8 text-[#64746c]" id="tourmate-news-placeholder">TourMate updates will be shared here soon.</p>
+
+    <!-- News: Latest TourMate Updates -->
+    <section
+            id="novedades"
+            class="relative overflow-hidden bg-[#f5f5ef] px-6 py-20 md:py-24"
+            aria-labelledby="news-heading"
+            style="scroll-margin-top: 96px;"
+    >
+
+        <!-- Decorative background -->
+        <div class="pointer-events-none absolute -left-20 top-0 h-72 w-72 rounded-full bg-[#dfe9dc]/60 blur-3xl"></div>
+        <div class="pointer-events-none absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-[#efc5a6]/20 blur-3xl"></div>
+
+        <div class="relative mx-auto max-w-6xl">
+
+            <!-- Section heading -->
+            <div class="mx-auto mb-12 max-w-2xl text-center">
+
+            <span
+                    class="text-xs font-semibold uppercase tracking-[0.22em] text-[#b57950]"
+                    data-i18n="novedades.tag"
+            >
+                News
+            </span>
+
+                <h2
+                        id="news-heading"
+                        class="mt-4 text-3xl font-semibold tracking-tight text-[#203d34] md:text-5xl"
+                        data-i18n="novedades.title"
+                >
+                    What's new at TourMate
+                </h2>
+
+                <p
+                        class="mx-auto mt-5 text-base leading-8 text-[#64746c]"
+                        data-i18n="novedades.subtitle"
+                >
+                    Discover our latest videos and platform updates.
+                </p>
+
             </div>
+
+            <!-- News cards -->
+            <div class="grid gap-6 md:grid-cols-3">
+
+                <!-- Card 1: About the Product -->
+                <article
+                        class="group flex flex-col rounded-3xl border border-[#dce5dc] bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                >
+
+                    <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#e7eee7] text-[#29433a]">
+                        <i class="fa-solid fa-circle-play text-2xl" aria-hidden="true"></i>
+                    </div>
+
+                    <span
+                            class="mb-3 text-xs font-semibold uppercase tracking-widest text-[#b57950]"
+                            data-i18n="novedades.item1-badge"
+                    >
+                    NEW VIDEO
+                </span>
+
+                    <h3
+                            class="mb-3 text-xl font-semibold text-[#203d34]"
+                            data-i18n="novedades.item1-title"
+                    >
+                        Discover TourMate
+                    </h3>
+
+                    <p
+                            class="mb-7 flex-grow text-sm leading-7 text-[#64746c]"
+                            data-i18n="novedades.item1-desc"
+                    >
+                        Watch our product presentation and discover how
+                        TourMate connects adventure, technology and safety.
+                    </p>
+
+                    <a
+                            href="#about-product-video"
+                            class="inline-flex items-center gap-2 font-semibold text-[#29433a] transition-colors hover:text-[#b57950]"
+                    >
+                    <span data-i18n="novedades.item1-cta">
+                        Watch video
+                    </span>
+                        <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+                    </a>
+
+                </article>
+
+                <!-- Card 2: About the Team -->
+                <article
+                        class="group flex flex-col rounded-3xl border border-[#dce5dc] bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                >
+
+                    <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f8e9de] text-[#a96e4f]">
+                        <i class="fa-solid fa-users text-2xl" aria-hidden="true"></i>
+                    </div>
+
+                    <span
+                            class="mb-3 text-xs font-semibold uppercase tracking-widest text-[#b57950]"
+                            data-i18n="novedades.item2-badge"
+                    >
+                    NEW VIDEO
+                </span>
+
+                    <h3
+                            class="mb-3 text-xl font-semibold text-[#203d34]"
+                            data-i18n="novedades.item2-title"
+                    >
+                        Meet the Axiom Team
+                    </h3>
+
+                    <p
+                            class="mb-7 flex-grow text-sm leading-7 text-[#64746c]"
+                            data-i18n="novedades.item2-desc"
+                    >
+                        Meet the people behind TourMate and learn
+                        about the team developing the project.
+                    </p>
+
+                    <a
+                            href="#about-team-video"
+                            class="inline-flex items-center gap-2 font-semibold text-[#29433a] transition-colors hover:text-[#b57950]"
+                    >
+                    <span data-i18n="novedades.item2-cta">
+                        Meet the team
+                    </span>
+                        <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+                    </a>
+
+                </article>
+
+                <!-- Card 3: Web Application -->
+                <article
+                        class="group flex flex-col rounded-3xl border border-[#dce5dc] bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                >
+
+                    <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#e7eee7] text-[#29433a]">
+                        <i class="fa-solid fa-laptop-code text-2xl" aria-hidden="true"></i>
+                    </div>
+
+                    <span
+                            class="mb-3 text-xs font-semibold uppercase tracking-widest text-[#b57950]"
+                            data-i18n="novedades.item3-badge"
+                    >
+                    PLATFORM PREVIEW
+                </span>
+
+                    <h3
+                            class="mb-3 text-xl font-semibold text-[#203d34]"
+                            data-i18n="novedades.item3-title"
+                    >
+                        Explore Our Web App
+                    </h3>
+
+                    <p
+                            class="mb-7 flex-grow text-sm leading-7 text-[#64746c]"
+                            data-i18n="novedades.item3-desc"
+                    >
+                        Explore our web application preview,
+                        including tour management, monitoring
+                        and traveler reviews.
+                    </p>
+
+                    <a
+                            href="#preview"
+                            class="inline-flex items-center gap-2 font-semibold text-[#29433a] transition-colors hover:text-[#b57950]"
+                    >
+                    <span data-i18n="novedades.item3-cta">
+                        Explore preview
+                    </span>
+                        <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+                    </a>
+
+                </article>
+
+            </div>
+
         </div>
+
     </section>
     <!-- End News -->
+
 
     <!--
 plans — pricing for tourists and agencies
@@ -831,40 +1001,113 @@ plans — pricing for tourists and agencies
 
             </div>
 
-            <!-- About the Team - Video Section (the existing member cards remain unchanged) -->
+
+            <!-- About the Team - Video Section -->
             <div id="about-team-video" class="mb-16" aria-labelledby="about-team-video-heading">
+
                 <div class="relative overflow-hidden rounded-3xl bg-[#213f35] shadow-[0_22px_60px_rgba(20,52,41,0.20)]">
+
                     <div class="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rounded-full border border-white/10"></div>
                     <div class="pointer-events-none absolute -right-4 -top-12 h-52 w-52 rounded-full border border-white/10"></div>
+
                     <div class="relative grid items-center gap-10 p-7 sm:p-10 lg:grid-cols-2 lg:gap-14 lg:p-14">
+
+                        <!-- Información del equipo -->
                         <div>
-                            <p class="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#efc5a6]" data-i18n="video-team.tag">THE PEOPLE BEHIND TOURMATE</p>
-                            <h3 id="about-team-video-heading" class="mb-5 text-3xl font-semibold leading-tight text-white sm:text-4xl" data-i18n="video-team.title">About the Team</h3>
-                            <p class="max-w-lg text-base leading-7 text-white/75" data-i18n="video-team.description">Meet the people who bring together technology, adventure, and care to make every TourMate expedition safer.</p>
+
+                            <p
+                                    class="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#efc5a6]"
+                                    data-i18n="video-team.tag"
+                            >
+                                THE PEOPLE BEHIND TOURMATE
+                            </p>
+
+                            <h3
+                                    id="about-team-video-heading"
+                                    class="mb-5 text-3xl font-semibold leading-tight text-white sm:text-4xl"
+                                    data-i18n="video-team.title"
+                            >
+                                About the Team
+                            </h3>
+
+                            <p
+                                    class="max-w-lg text-base leading-7 text-white/75"
+                                    data-i18n="video-team.description"
+                            >
+                                Meet the people who bring together technology,
+                                adventure, and care to make every TourMate
+                                expedition safer.
+                            </p>
+
+                            <!-- Fotografías del equipo -->
                             <div class="mt-7 flex -space-x-3" aria-hidden="true">
-                                <img class="h-12 w-12 rounded-full border-[3px] border-[#213f35] object-cover" src="assets/images/carrillo.png" alt="" loading="lazy">
-                                <img class="h-12 w-12 rounded-full border-[3px] border-[#213f35] object-cover" src="assets/images/huingo.png" alt="" loading="lazy">
-                                <img class="h-12 w-12 rounded-full border-[3px] border-[#213f35] object-cover" src="assets/images/quispe.png" alt="" loading="lazy">
-                                <img class="h-12 w-12 rounded-full border-[3px] border-[#213f35] object-cover" src="assets/images/verastigue.png" alt="" loading="lazy">
-                                <img class="h-12 w-12 rounded-full border-[3px] border-[#213f35] object-cover" src="assets/images/molina.jpg" alt="" loading="lazy">
+
+                                <img
+                                        class="h-12 w-12 rounded-full border-[3px] border-[#213f35] object-cover"
+                                        src="assets/images/carrillo.png"
+                                        alt=""
+                                        loading="lazy"
+                                >
+
+                                <img
+                                        class="h-12 w-12 rounded-full border-[3px] border-[#213f35] object-cover"
+                                        src="assets/images/huingo.png"
+                                        alt=""
+                                        loading="lazy"
+                                >
+
+                                <img
+                                        class="h-12 w-12 rounded-full border-[3px] border-[#213f35] object-cover"
+                                        src="assets/images/quispe.png"
+                                        alt=""
+                                        loading="lazy"
+                                >
+
+                                <img
+                                        class="h-12 w-12 rounded-full border-[3px] border-[#213f35] object-cover"
+                                        src="assets/images/verastigue.png"
+                                        alt=""
+                                        loading="lazy"
+                                >
+
+                                <img
+                                        class="h-12 w-12 rounded-full border-[3px] border-[#213f35] object-cover"
+                                        src="assets/images/molina.jpg"
+                                        alt=""
+                                        loading="lazy"
+                                >
+
                             </div>
+
                         </div>
-                        <!-- Video placeholder: later replace this inner panel with a <video> element.
-                             Suggested file: assets/videos/about-team.mp4 -->
-                        <div class="relative flex aspect-video min-h-[220px] items-center justify-center overflow-hidden rounded-2xl border border-white/20 bg-[#31584a] shadow-xl">
-                            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('assets/images/hero-expedition.png');"></div>
-                            <div class="relative z-10 px-5 text-center text-white">
-                            <span class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full border border-white/50 bg-white/20" aria-hidden="true">
-                                <i class="fa-solid fa-play text-xl"></i>
-                            </span>
-                                <p class="text-lg font-semibold" data-i18n="video-team.video-title">Meet the Axiom Team</p>
-                                <p class="mt-2 text-sm text-white/75" data-i18n="video-team.coming-soon">Team presentation video coming soon</p>
-                            </div>
+
+                        <!-- Video de presentación del equipo Axiom -->
+                        <div class="relative overflow-hidden rounded-2xl border border-white/20 bg-[#31584a] shadow-xl">
+
+                            <video
+                                    class="block w-full aspect-video object-contain bg-[#193c32]"
+                                    controls
+                                    playsinline
+                                    preload="metadata"
+                                    poster="assets/images/hero-expedition.png"
+                                    aria-label="Video de presentación del equipo Axiom"
+                            >
+                                <source
+                                        src="assets/videos/about-the-team.mp4"
+                                        type="video/mp4"
+                                >
+                                Tu navegador no soporta la reproducción de videos.
+                            </video>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
             <!-- End About the Team - Video Section -->
+
 
             <!-- Integrantes del equipo -->
             <div class="team-members">

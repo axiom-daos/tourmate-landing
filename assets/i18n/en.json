@@ -154,20 +154,25 @@
     "web-title": "Web Platform",
     "web-desc": "Dashboard for agencies with live maps, automatic alerts and detailed reports for each tour."
   },
+
   "novedades": {
-    "tag": "News",
+    "tag": "NEWS",
     "title": "What's new at TourMate",
-    "subtitle": "Small improvements, shipped often. Here's what changed recently.",
-    "item1-date": "June 2026",
-    "item1-title": "Faster offline sync",
-    "item1-desc": "Wearable data now syncs up to 3x faster the moment a signal is found.",
-    "item2-date": "May 2026",
-    "item2-title": "Auto-generated travel journal",
-    "item2-desc": "Every completed tour now gets a shareable journal with photos, route and vitals.",
-    "item3-date": "April 2026",
-    "item3-title": "Bluetooth checkpoints for Pro plan",
-    "item3-desc": "Agencies on the Pro plan can now install up to 10 trailside checkpoints."
+    "subtitle": "Discover our latest videos and platform updates.",
+    "item1-badge": "NEW VIDEO",
+    "item1-title": "Discover TourMate",
+    "item1-desc": "Watch our product presentation and discover how TourMate connects adventure, technology and safety.",
+    "item1-cta": "Watch video",
+    "item2-badge": "NEW VIDEO",
+    "item2-title": "Meet the Axiom Team",
+    "item2-desc": "Meet the people behind TourMate and learn about the team developing the project.",
+    "item2-cta": "Meet the team",
+    "item3-badge": "PLATFORM PREVIEW",
+    "item3-title": "Explore Our Web App",
+    "item3-desc": "Explore our web application preview, including tour management, monitoring and traveler reviews.",
+    "item3-cta": "Explore preview"
   },
+
   "plans": {
     "tag": "Plans",
     "title": "Plans for every adventure",
