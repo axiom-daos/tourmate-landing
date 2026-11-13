@@ -134,20 +134,25 @@
     "web-title": "Plataforma Web",
     "web-desc": "Dashboard para agencias con mapas en vivo, alertas automáticas y reportes detallados de cada tour."
   },
+
   "novedades": {
-    "tag": "Novedades",
-    "title": "Qué hay de nuevo en TourMate",
-    "subtitle": "Mejoras pequeñas, lanzadas seguido. Esto es lo que cambió recientemente.",
-    "item1-date": "Junio 2026",
-    "item1-title": "Sincronización offline más rápida",
-    "item1-desc": "Los datos del wearable ahora sincronizan hasta 3 veces más rápido en cuanto hay señal.",
-    "item2-date": "Mayo 2026",
-    "item2-title": "Diario de viaje autogenerado",
-    "item2-desc": "Cada tour completado ahora genera un diario compartible con fotos, ruta y signos vitales.",
-    "item3-date": "Abril 2026",
-    "item3-title": "Checkpoints Bluetooth para el plan Pro",
-    "item3-desc": "Las agencias en el plan Pro ya pueden instalar hasta 10 checkpoints en ruta."
+    "tag": "NOVEDADES",
+    "title": "Lo último de TourMate",
+    "subtitle": "Conoce nuestros últimos videos y avances de la plataforma.",
+    "item1-badge": "NUEVO VIDEO",
+    "item1-title": "Descubre TourMate",
+    "item1-desc": "Mira nuestro video de presentación y descubre cómo TourMate conecta aventura, tecnología y seguridad.",
+    "item1-cta": "Ver video",
+    "item2-badge": "NUEVO VIDEO",
+    "item2-title": "Conoce al equipo Axiom",
+    "item2-desc": "Conoce a las personas detrás de TourMate y al equipo encargado de desarrollar nuestro proyecto.",
+    "item2-cta": "Conocer al equipo",
+    "item3-badge": "VISTA DE LA PLATAFORMA",
+    "item3-title": "Explora nuestra aplicación",
+    "item3-desc": "Descubre una vista previa de nuestra aplicación web, incluyendo gestión de tours, monitoreo y reseñas.",
+    "item3-cta": "Explorar aplicación"
   },
+
   "plans": {
     "tag": "Planes",
     "title": "Planes para cada aventura",
